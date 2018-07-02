@@ -110,6 +110,19 @@ body {
   overflow: auto;
 }
 
+/* 
+ * 给它们来个特效吧！
+ * 让它们在编辑的时候呼吸
+ */
+.breathe {
+  animation: breathe 1s ease 0s infinite alternate;
+}
+@keyframes breathe
+{
+  from { box-shadow: 0 0 8px 0px #e5c9be; }
+  to { box-shadow: 0 0 8px 4px #e5c9be; }
+}
+
 /* 接下来，请看右边 */
 
 `
@@ -208,11 +221,15 @@ function writeResume() {
 }
 
 writeCode(code_ready, '').then(() => {
+  $('#paper').addClass('breathe').siblings().removeClass('breathe')
   writeResume().then(() => {
+    $('#code_body').addClass('breathe').siblings().removeClass('breathe')
     writeCode(code_marked, code_ready).then(() => {
+      $('#paper').addClass('breathe').siblings().removeClass('breathe')
       paper.innerHTML = marked(resume)
     }).then(() => {
       paper.scrollTop = 0
+      $('#code_body').addClass('breathe').siblings().removeClass('breathe')
       writeCode(code_resume, code_ready + code_marked).then(() => {
         $('p').eq(0).css({ 'text-align': 'center' })
         $('p').eq($('p').length - 1).css({ 'float': 'right', 'margin-top': '-36px' })
