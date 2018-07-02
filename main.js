@@ -68,8 +68,7 @@ body {
 }
 /* 让 wrapper 里的元素 flex 布局 */
 .wrapper {
-  width: 100%;
-  min-width: 960px;
+  min-width: 1100px;
   height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -99,11 +98,11 @@ body {
 
 /* 让代码框腾出一些的位置给我的简历框 */
 #code_body {
-  width: 35%;
+  width: 30%;
 }
 /* 准备一个白板 */
 #paper {
-  width: 65%;
+  width: 70%;
   background: #fff;
   margin: 16px;
   padding: 16px;
@@ -159,6 +158,25 @@ let code_resume = `
 
 `
 
+let code_photo = `
+/* 然后把我的头像放在个人信息里 */
+#paper img {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+/* 这还得让我的简历框相对定位 */
+#paper {
+  position: relative;
+}
+/* 
+ * 好啦，我的头像出来啦~
+ * 期待这张面孔出现在您的面试中
+ * 
+ *                     *^_^*
+ */
+`
+
 function writeCode(code, origin) {
   let n = 1
   return new Promise(resolve => {
@@ -199,6 +217,12 @@ writeCode(code_ready, '').then(() => {
         $('p').eq(0).css({ 'text-align': 'center' })
         $('p').eq($('p').length - 1).css({ 'float': 'right', 'margin-top': '-36px' })
         $('ul').eq($('ul').length - 1).css({ 'margin-top': '-40px' })
+      }).then(() => {
+        writeCode('/* 接下来添加个头像吧！ */', code_ready + code_marked + code_resume).then(() => {
+          $('#paper').append('<img src="./avatar.png" width="100" height="140" />')
+        }).then(() => {
+          writeCode(code_photo, code_ready + code_marked + code_resume + '/* 接下来添加个头像吧！ */')
+        })
       })
     })
   })
