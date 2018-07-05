@@ -1,9 +1,23 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding:0;
+  padding: 0;
+}
+/* 让 wrapper 里的元素 flex 布局 */
+.wrapper {
+  min-width: 1100px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .token.comment, .token.punctuation, .token.property, .token.selector {
   color: black;
+}
+
+@keyframes breathe
+{
+  0% { box-shadow: 0 0 1px 0px #ffccbb; }
+  50% { box-shadow: 0 0 10px 4px #ffdcc1; }
+  100% { box-shadow: 0 0 1px 0px #ffccbb; }
 }

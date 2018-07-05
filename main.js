@@ -66,21 +66,13 @@ let code_ready = `/*
 body {
   background: #fff3dd;
 }
-/* 让 wrapper 里的元素 flex 布局 */
-.wrapper {
-  min-width: 1100px;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-}
 /* 给代码加个边框 */
 #code_body {
   width: 100%;
+  border: 1px solid #fff;
   margin: 16px;
   padding: 16px;
   overflow: auto;
-  border: 1px solid #fff;
 }
 
 /* 让代码高亮起来 */
@@ -94,33 +86,27 @@ body {
   color: #cf1f1f;
 }
 
+/* 
+ * 给它们来个特效吧！
+ * 让它们在被编辑的时候产生“呼吸”的效果
+ */
+.breathe {
+  animation: breathe 3s ease 0s infinite;
+}
+
+
 /* 现在开始写简历啦！ */
 
 /* 让代码框腾出一些的位置给我的简历框 */
 #code_body {
-  width: 30%;
+  width: 32%;
 }
 /* 准备一个白板 */
 #paper {
-  width: 70%;
+  width: 68%;
   background: #fff;
   margin: 16px;
-  padding: 16px;
-  white-space: pre;
   overflow: auto;
-}
-
-/* 
- * 给它们来个特效吧！
- * 让它们在编辑的时候呼吸
- */
-.breathe {
-  animation: breathe 1s ease 0s infinite alternate;
-}
-@keyframes breathe
-{
-  from { box-shadow: 0 0 8px 0px #e5c9be; }
-  to { box-shadow: 0 0 8px 4px #e5c9be; }
 }
 
 /* 接下来，请看右边 */
@@ -138,57 +124,130 @@ let code_marked = `
 let code_resume = `
 /* 调整我的简历，让它变得再好看一点 */
 #paper {
+  padding: 0 32px;
   font-size: 14px;
-  line-height: 24px;
 }
 #paper ul {
-  margin: -20px 0px -10px 0px;
   padding-left: 20px;
 }
-#paper p, #paper li {
-  margin: -8px 0px;
+#paper li, #paper p {
   white-space: pre-wrap;
   word-break: break-word;
 }
 #paper h1 {
   font-size: 22px;
-  margin-top: 10px;
-  text-align: center;
+  margin-bottom: 10px;
 }
 #paper h2 {
   font-size: 16px;
-  margin-bottom: -8px;
-  padding: 4px 0;
   border-bottom: 1px solid #666;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
 }
 #paper h3 {
   display: inline-block;
   font-size: 14px;
-  margin-bottom: 12px;
+  margin: 6px 0;
+}
+/* 让每个模块上下间隔明显一点 */
+#paper > div {
+  margin: 28px 0;
 }
 
-/* 接下来是精细的调整，需要使用 JS */
+/* 接下来是精细的调整 */
 
+/* 首先，调整我的“基础信息”板块 */
+#information {
+  text-align: center;
+}
+#information p {
+  line-height: 24px;
+}
+
+/* 然后，缩小“专业技能”中列表的行间距 */
+#skills ul {
+  margin: 20px 0;
+}
+#skills li {
+  margin: 10px 0;
+}
+
+/* 
+ * 调整“项目经验”和
+ * “教育经历”中列表的间距
+ */
+#works ul, #education ul {
+  margin: 10px 0;
+}
+#works li, #education li {
+  margin-bottom: 8px;
+}
+
+/* 调整“教育经历”中时间的位置 */
+#education {
+  position: relative;
+}
+#education p {
+  position: absolute;
+  right: 0px;
+  top: 40px;
+}
+
+
+/* 接下来添加个头像吧！ */
 `
 
 let code_photo = `
-/* 然后把我的头像放在个人信息里 */
-#paper img {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-}
-/* 这还得让我的简历框相对定位 */
-#paper {
+/* 把我的头像放在个人信息里 */
+#information {
   position: relative;
 }
+#information img {
+  width: 90px;
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+/* 让多余的照片隐藏吧~ */
+#information {
+  overflow: hidden;
+}
+
 /* 
  * 好啦，我的头像出来啦~
  * 期待这张面孔出现在您的面试中
  * 
  *                     *^_^*
+ *          —— 蔡嘉琳 2018/7
  */
 `
+
+writeCode(code_ready, '').then(() => {
+  $('#paper').addClass('breathe').siblings().removeClass('breathe')
+  writeResume().then(() => {
+    $('#code_body').addClass('breathe').siblings().removeClass('breathe')
+    writeCode(code_marked, code_ready).then(() => {
+      $('#paper')[0].innerHTML = marked(resume)
+      $('#paper').prepend('<div id="information"></div>', '<div id="skills"></div>', '<div id="works"></div>', '<div id="education"></div>')
+      $('#information').append($('h1'), $('p').first())
+      $('#skills').append($('h2:contains("技能")'), $('ul').first())
+      $('#education').append($('h2:contains("教育")'), $('h3:contains("学院")'), $('p').last(), $('ul').last())
+      $('#works').append($('h2:contains("项目")'), $('#paper').children().not($('div')))
+    }).then(() => {
+      $('#paper')[0].scrollTop = 0
+      writeCode(code_resume, code_ready + code_marked).then(() => {
+        $('#information').append('<img src="./avatar.png" alt="头像" />')
+      }).then(() => {
+        writeCode(code_photo, code_ready + code_marked + code_resume).then(() => {
+          setTimeout(() => {
+            $('#code_body').css({ 'width': '25%',  })
+          }, 1000)
+        })
+      })
+    })
+  })
+})
+
 
 function writeCode(code, origin) {
   let n = 1
@@ -202,7 +261,7 @@ function writeCode(code, origin) {
         window.clearInterval(intervalID)
         resolve.call(undefined)
       }
-    }, 1)
+    }, 0)
   })
 }
 function writeResume() {
@@ -219,28 +278,3 @@ function writeResume() {
     }, 1)
   })
 }
-
-writeCode(code_ready, '').then(() => {
-  $('#paper').addClass('breathe').siblings().removeClass('breathe')
-  writeResume().then(() => {
-    $('#code_body').addClass('breathe').siblings().removeClass('breathe')
-    writeCode(code_marked, code_ready).then(() => {
-      $('#paper').addClass('breathe').siblings().removeClass('breathe')
-      paper.innerHTML = marked(resume)
-    }).then(() => {
-      paper.scrollTop = 0
-      $('#code_body').addClass('breathe').siblings().removeClass('breathe')
-      writeCode(code_resume, code_ready + code_marked).then(() => {
-        $('p').eq(0).css({ 'text-align': 'center' })
-        $('p').eq($('p').length - 1).css({ 'float': 'right', 'margin-top': '-36px' })
-        $('ul').eq($('ul').length - 1).css({ 'margin-top': '-40px' })
-      }).then(() => {
-        writeCode('/* 接下来添加个头像吧！ */', code_ready + code_marked + code_resume).then(() => {
-          $('#paper').append('<img src="./avatar.png" width="100" height="140" />')
-        }).then(() => {
-          writeCode(code_photo, code_ready + code_marked + code_resume + '/* 接下来添加个头像吧！ */')
-        })
-      })
-    })
-  })
-})
