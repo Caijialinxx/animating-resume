@@ -15,9 +15,20 @@
   color: black;
 }
 
+code {
+  padding: 2px 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #455A64;
+  background-color: #455a6426;
+  height: 18px;
+  line-height: 18px;
+  font-size: 90%;
+}
+
 @keyframes breathe
 {
-  0% { box-shadow: 0 0 1px 0px #ffccbb; }
-  50% { box-shadow: 0 0 10px 4px #ffdcc1; }
-  100% { box-shadow: 0 0 1px 0px #ffccbb; }
+  0% { box-shadow: 0 0 1px 0px #CFD8DC; }
+  50% { box-shadow: 0 0 10px 4px #CFD8DC; }
+  100% { box-shadow: 0 0 1px 0px #CFD8DC; }
 }
