@@ -1,12 +1,13 @@
 let resume = `# 蔡嘉琳
-137-xxxx-6136 | caijialinxx@foxmail.com | 深圳
-Wechat：137xxxx6136 | Github: https://github.com/Caijialinxx
-应届生 | 前端工程师
+137-1709-6136 | caijialinxx@foxmail.com | 深圳
+Profile：https://caijialinxx.github.io/resume/
+Github: https://github.com/Caijialinxx
+应届生 | 前端开发工程师
 
 ## 专业技能
 - HTML5, CSS3 & JavaScript
     - 能够使用原生 JavaScript 独立制作精美网页
-    - 掌握 HTML5 语义化标签如 canvas 、 nav 及 WebStorage API 等
+    - 掌握 HTML5 如 canvas 、 nav 等语义化标签及 WebStorage API 等
     - 掌握 CSS3 动画、过渡、弹性盒子布局、媒体查询等响应式设计常用技术
 - React & React Native
     - 有 React 的开发经历，理解 JSX 、组件、 props 、 state 及生命周期等
@@ -18,10 +19,9 @@ Wechat：137xxxx6136 | Github: https://github.com/Caijialinxx
 - Webpack
     - 有使用 Webpack 打包项目的经验，了解其管理资源的方法，如 css-loader 、 file-loader 等
 - 其他
-    - 掌握 JQuery 的使用
-    - 掌握 Scss 、 Less 的使用
-    - 理解 MVC 、 MVVM 思想
-    - 掌握 HTTP 基础
+    - 熟悉 jQuery 常用 API ，如 DOM 操作、特效、事件等。曾使用原生 JavaScript 封装简易版的 $.ajax()
+    - 掌握 Scss 、 Less 的使用，理解嵌套规则、父选择器 & 、变量、混合等的使用
+    - 理解 MVC 、 MVVM 思想，掌握 HTTP 基础等
 
 ## 项目经验
 ### 简历生成器
@@ -59,6 +59,13 @@ Wechat：137xxxx6136 | Github: https://github.com/Caijialinxx
 - 源码链接：https://github.com/Caijialinxx/IMsystem
 - 预览链接：https://arcane-mountain-17783.herokuapp.com/
 - 描述：该项目后端使用 Node.js 实现一个在线聊天室，有登录、添加好友、单聊/群聊、发送消息（文本/表情/文件）等功能。使用 Express 实现路由功能，由个人独立开发，已部署到 Heroku 上。
+
+## 实习经历
+### 天津乐童年科技发展有限公司
+2017/9 - 2017/11
+- 职位：前端开发实习
+- 工作内容：配合公司需要，开发公司的官方网站。
+- 主要技术： jQuery 、CSS3 、 响应式设计等
 
 ## 教育经历
 ### 广东第二师范学院
@@ -190,11 +197,11 @@ let code_beautify_resume = `
   margin-bottom: 4px;
 }
 
-/* 调整“教育经历”中时间的位置 */
-#education {
+/* 调整“实习经历”和“教育经历”中时间的位置 */
+#internship, #education {
   position: relative;
 }
-#education p {
+#internship p, #education p {
   position: absolute;
   right: 0px;
   top: 40px;
@@ -235,10 +242,11 @@ writeCode(code_ready, '').then(() => {
     $('#code_body').addClass('breathe').siblings().removeClass('breathe')
     writeCode(code_marked, code_ready).then(() => {
       $('#paper')[0].innerHTML = marked(resume)
-      $('#paper').prepend('<div id="information"></div>', '<div id="skills"></div>', '<div id="works"></div>', '<div id="education"></div>')
+      $('#paper').prepend('<div id="information"></div>', '<div id="skills"></div>', '<div id="works"></div>', '<div id="internship"></div>', '<div id="education"></div>')
       $('#information').append($('h1'), $('p').first())
       $('#skills').append($('h2:contains("技能")'), $('ul').first())
       $('#education').append($('h2:contains("教育")'), $('h3:contains("学院")'), $('p').last(), $('ul').last())
+      $('#internship').append($('h2:contains("实习")'), $('h3:contains("公司")'), $('#paper > p'), $('#paper > ul').last())
       $('#works').append($('h2:contains("项目")'), $('#paper').children().not($('div')))
     }).then(() => {
       $('#paper')[0].scrollTop = 0

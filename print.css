@@ -51,10 +51,10 @@
 #skills li, #works li, #education li {
   margin-bottom: 4px;
 }
-#education {
+#internship, #education {
   position: relative;
 }
-#education p {
+#internship p, #education p {
   position: absolute;
   right: 0px;
   top: 40px;
