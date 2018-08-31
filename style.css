@@ -24,6 +24,7 @@ code {
   height: 18px;
   line-height: 18px;
   font-size: 90%;
+  font-family: Consolas,monospace,serif;
 }
 
 @keyframes breathe

@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#code_body {
+  display: none;
+}
+#paper {
+  width: 100%;
+  margin: 0;
+  padding: 0 32px;
+  font-size: 14px;
+  white-space: unset;
+  background: #ffffff;
+}
+#paper a {
+  color: #455A64;
+}
+#paper ul {
+  padding-left: 20px;
+}
+#paper > div {
+  margin-bottom: 28px;
+}
+#paper h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+#information {
+  text-align: center;
+}
+#information p {
+  line-height: 24px;
+  white-space: pre-wrap;
+}
+#paper h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #455A64;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+#paper h3 {
+  display: inline-block;
+  font-size: 14px;
+  margin: 6px 0;
+}
+#skills > ul ul {
+  margin: 4px 0;
+}
+#skills li, #works li, #education li {
+  margin-bottom: 4px;
+}
+#education {
+  position: relative;
+}
+#education p {
+  position: absolute;
+  right: 0px;
+  top: 40px;
+}
+#information {
+  position: relative;
+}
+#information img {
+  width: 90px;
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
+#information {
+  overflow: hidden;
+}
+
+#paper code {
+  padding: 2px 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #455A64;
+  background-color: #455a6426;
+  height: 18px;
+  line-height: 18px;
+  font-size: 90%;
+  font-family: Consolas,monospace,serif;
+}

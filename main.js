@@ -123,6 +123,7 @@ body {
   background: #fdfdfd;
   margin: 16px;
   overflow: auto;
+  white-space: pre-wrap;
 }
 
 /* 接下来，请看右边 */
@@ -140,6 +141,7 @@ let code_marked = `
 let code_beautify_resume = `
 /* 调整我的简历，让它变得再好看一点 */
 #paper {
+  white-space: unset;
   padding: 0 32px;
   font-size: 14px;
 }
@@ -172,7 +174,7 @@ let code_beautify_resume = `
 /* 然后是详细介绍模块 */
 #paper h2 {
   font-size: 16px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid #455A64;
   padding-bottom: 6px;
   margin-bottom: 6px;
 }
