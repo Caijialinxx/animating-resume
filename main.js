@@ -93,7 +93,6 @@ body {
   width: 100%;
   border: 1px solid #CFD8DC;
   background: #CFD8DC;
-  margin: 16px;
   padding: 16px;
   overflow: auto;
 }
@@ -121,12 +120,12 @@ body {
 /* 现在开始写简历啦！ */
 
 /* 让代码框腾出一些的位置给我的简历框 */
-#code_body {
+#options {
   width: 32%;
 }
 /* 准备一个白板 */
 #paper {
-  width: 68%;
+  flex: 1;
   background: #fdfdfd;
   margin: 16px;
   overflow: auto;
@@ -237,9 +236,11 @@ let code_photo = `
 `
 
 writeCode(code_ready, '').then(() => {
-  $('#paper').addClass('breathe').siblings().removeClass('breathe')
+  $('#paper').addClass('breathe')
+  $('#code_body').removeClass('breathe')
   writeResume().then(() => {
-    $('#code_body').addClass('breathe').siblings().removeClass('breathe')
+    $('#code_body').addClass('breathe')
+    $('#paper').removeClass('breathe')
     writeCode(code_marked, code_ready).then(() => {
       $('#paper')[0].innerHTML = marked(resume)
       $('#paper').prepend('<div id="information"></div>', '<div id="skills"></div>', '<div id="works"></div>', '<div id="internship"></div>', '<div id="education"></div>')
@@ -254,8 +255,11 @@ writeCode(code_ready, '').then(() => {
         $('#information').append('<img src="./images/avatar.png" alt="头像" />')
       }).then(() => {
         writeCode(code_photo, code_ready + code_marked + code_beautify_resume).then(() => {
+          $('#paper').addClass('breathe')
+          $('#code_body').removeClass('breathe')
           setTimeout(() => {
-            $('#code_body').css({ 'width': '25%', })
+            $('#options').css({ 'width': '23%' })
+            $('#options').append('<a class="downloadResume" href="resume.pdf" target="_blank" download="前端开发-蔡嘉琳">下载 PDF 简历</a>')
           }, 1000)
         })
       })
