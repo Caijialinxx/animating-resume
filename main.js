@@ -1,14 +1,16 @@
 let resume = `# 蔡嘉琳
-137xxxxxxxx | caijialinxx@foxmail.com | 深圳
+13717096136 | caijialinxx@foxmail.com | 深圳
 Profile：https://caijialinxx.github.io/resume/
 Github: https://github.com/Caijialinxx
-应届生 | 前端开发工程师
+18届毕业生 | 前端开发工程师
 
 ## 专业技能
 - HTML5, CSS3 & JavaScript
     - 能够使用原生 JavaScript 独立制作精美网页
     - 掌握 HTML5 如 canvas 、 nav 等语义化标签及 WebStorage API 等
     - 掌握 CSS3 动画、过渡、弹性盒子布局、媒体查询等响应式设计常用技术
+- Vue
+    - 有 Vue 开发 PC 端运营系统经验，掌握组件及组件间数据传递的使用、响应式原理、路由和 Vuex 的使用等
 - React & React Native
     - 有 React 的开发经历，理解 JSX 、组件、 props 、 state 及生命周期等
     - 有 React Native 移动端开发的经历，掌握原生 UI 组件、 React Navigation 、动画等 API 的使用
@@ -23,61 +25,60 @@ Github: https://github.com/Caijialinxx
     - 掌握 Scss 、 Less 的使用，理解嵌套规则、父选择器 & 、变量、混合等的使用
     - 理解 MVC 、 MVVM 思想，掌握 HTTP 基础等
 
+## 工作经历
+### 北京宸铭影视文化传媒有限公司
+2018/10 - 至今
+- 职位：前端开发（自接外包）
+- 主要技术：\`Vue\`、\`Vue Router\`、\`Vuex\`
+- 工作内容：开发单页面 PC 端运营管理系统。主要重难点有组件的使用和切换、多个组件实例之间共享的状态的管理（Vuex）。 UI 组件自造轮子或使用 Element 。
+
 ## 项目经验
 ### 简历生成器
 - 关键词：\`JavaScript\`、\`CSS3\`、\`Promise\`、\`Markdown\`
-- 源码链接：https://github.com/Caijialinxx/animating-resume/blob/master/main.js
-- 预览链接：https://caijialinxx.github.io/animating-resume/
 - 描述：该项目实现了一个 Markdown 简历的制作过程，在原生 JS 中使用 Promise 处理异步操作，利用 CSS3 实现过渡、动画、阴影和弹性布局等。
+- [源码链接](https://github.com/Caijialinxx/animating-resume/blob/master/main.js) | [预览链接](https://caijialinxx.github.io/animating-resume/)
 
 ### 极简清单
-- 关键词：\`React\`、\`React Native\`、\`组件化思想\`、\`3D 转换\`、\`动画\`、\`渐变\`、\`内外阴影\`
-- 源码链接：[PC 端源码(React)](https://github.com/Caijialinxx/todo-react) [移动端源码(React Native)](https://github.com/Caijialinxx/todo-mobile)
-- 预览链接：[PC 端预览(React)](https://caijialinxx.github.io/todo-react/build/) [移动端预览(React Native)](https://expo.io/@caijialinxx/ToDo)
-- 描述：该项目由个人独立开发，功能有用户登录/注册、待办的添加/删除/标记完成状态。其中 PC 端还实现了移动待办、更换背景的功能，更换背景的按钮使用 3D 转换、动画、渐变和盒阴影等；移动端实现了顶部导航随键盘行为和滚动行为而缩放的功能。
-
-### 彩色涂鸦
-- 关键词：\`HTML5\`、\`Canvas\`、\`ES6\`、\`JavaScript\`
-- 源码链接：https://github.com/Caijialinxx/Canvas/blob/master/main.js
-- 预览链接：https://caijialinxx.github.io/Canvas/
-- 描述：使用 HTML5 的 Canvas 元素及其相关 API ，实现支持多指同时画图（可选色/粗细）、橡皮擦、一键清空、保存至本地的功能。
-
-### 幻灯片放映室
-- 关键词：\`jQuery\`、\`Loop模式\`、\`缩略图模式\`、\`Rem\`、\`适配移动端\`、\`ES6\`
-- 源码链接：https://github.com/Caijialinxx/Slides/blob/master/main.js
-- 预览链接：https://caijialinxx.github.io/Slides/
-- 描述：本项目展示了两种不同风格的轮播，功能有上一张、下一张、可点击的原点/缩略图导航、自动循环播放。使用了 Rem 单位，以及适配移动端。
+- 关键词：\`React\`、\`小程序\`、\`组件化思想\`、\`3D 转换\`、\`动画\`、\`渐变\`、\`内外阴影\`
+- 描述：该项目由个人独立开发，功能有用户登录/注册、待办的添加/删除/标记完成状态。其中 PC 端（React）还实现了移动待办、更换背景的功能，更换背景的按钮使用 3D 转换、动画、渐变和盒阴影等；小程序实现了用户信息更改、一键删除已完成/已过期等。
+- React 版本：[源码链接](https://github.com/Caijialinxx/todo-react) | [预览链接](https://caijialinxx.github.io/todo-react/build/)
+- 小程序版本：[源码链接](https://github.com/Caijialinxx/GoGoTodo) | 小程序搜索“GoGoTodo” 或扫描[二维码](./images/qrcode.png)预览
 
 ### 炫主页
 - 关键词：\`jQuery\`、\`CSS3 过渡动画\`、\`组件化思想\`、\`MVC 思想\`、\`媒体查询\`
-- 源码链接：https://github.com/Caijialinxx/resume
-- 预览链接：https://caijialinxx.github.io/resume/
 - 描述：此项目是本人的一个信息介绍页，包含基础信息、技能、项目展示以及留言板功能。有大量精美的动画，例如滚动时的导航栏及模块的浮起、导航栏 hover 动画、响应式设计等。
+- [源码链接](https://github.com/Caijialinxx/resume) | [预览链接](https://caijialinxx.github.io/resume/)
+
+### 幻灯片放映室
+- 关键词：\`jQuery\`、\`Loop模式\`、\`缩略图模式\`、\`Rem\`、\`适配移动端\`、\`ES6\`
+- 描述：本项目展示了两种不同风格的轮播，功能有上一张、下一张、可点击的原点/缩略图导航、自动循环播放。使用了 Rem 单位，以及适配移动端。
+- [源码链接](https://github.com/Caijialinxx/Slides/blob/master/main.js) | [预览链接](https://caijialinxx.github.io/Slides/)
+
+### 彩色涂鸦
+- 关键词：\`HTML5\`、\`Canvas\`、\`ES6\`、\`JavaScript\`
+- 描述：使用 HTML5 的 Canvas 元素及其相关 API ，实现支持多指同时画图（可选色/粗细）、橡皮擦、一键清空、保存至本地的功能。
+- [源码链接](https://github.com/Caijialinxx/Canvas/blob/master/main.js) | [预览链接](https://caijialinxx.github.io/Canvas/)
 
 ### 壹号聊天室
 - 关键词：\`Node.js\`、\`Socket.IO\`、\`Express\`
-- 源码链接：https://github.com/Caijialinxx/IMsystem
-- 预览链接：https://arcane-mountain-17783.herokuapp.com/
 - 描述：该项目后端使用 Node.js 实现一个在线聊天室，有登录、添加好友、单聊/群聊、发送消息（文本/表情/文件）等功能。使用 Express 实现路由功能，由个人独立开发，已部署到 Heroku 上。
-
-## 实习经历
-### 天津乐童年科技发展有限公司
-2017/9 - 2017/11
-- 职位：前端开发实习
-- 工作内容：配合公司需要，开发公司的官方网站。
-- 主要技术： jQuery 、CSS3 、 响应式设计等
+- [源码链接](https://github.com/Caijialinxx/IMsystem) | [预览链接](https://arcane-mountain-17783.herokuapp.com/)
 
 ## 教育经历
 ### 广东第二师范学院
 2014/9 - 2018/6
 - 专业学历：计算机科学与技术 大学本科
-- GPA：3.6 / 4.0
+- GPA：3.4 / 4.0
 - 荣誉：校二、三奖学金、优秀学生（2014-2015、2016-2017共两学年）、优秀学生干部（2014-2015、2016-2017共两学年）
 - 相关课程：网络应用开发（PHP）、数据结构与算法、数据库系统原理、计算机网络等
 `
 
 let code_ready = `/*
  * 嗨，我是蔡嘉琳。
+ * 我想用代码给你展示一下我的个人简历～
+ * 灵感来自：http://strml.net
+ * 
+ * 那么，我要开始啦...
  */
 
 /* 添加一个过渡，使变化看起来更柔和 */
@@ -215,7 +216,7 @@ let code_photo = `
 #information {
   position: relative;
 }
-#information img {
+#information .avatar {
   width: 90px;
   position: absolute;
   right: 0px;
@@ -231,7 +232,7 @@ let code_photo = `
  * 期待这张面孔出现在您的面试中
  * 
  *                     *^_^*
- *          —— 蔡嘉琳 2018/7
+ *          —— 蔡嘉琳 2018/12
  */
 `
 
@@ -242,24 +243,27 @@ writeCode(code_ready, '').then(() => {
     $('#code_body').addClass('breathe')
     $('#paper').removeClass('breathe')
     writeCode(code_marked, code_ready).then(() => {
+      console.log($('img.qrcode'))
       $('#paper')[0].innerHTML = marked(resume)
-      $('#paper').prepend('<div id="information"></div>', '<div id="skills"></div>', '<div id="works"></div>', '<div id="internship"></div>', '<div id="education"></div>')
+      $('#paper').prepend('<div id="information"></div>', '<div id="skills"></div>', '<div id="internship"></div>', '<div id="works"></div>', '<div id="education"></div>')
       $('#information').append($('h1'), $('p').first())
       $('#skills').append($('h2:contains("技能")'), $('ul').first())
       $('#education').append($('h2:contains("教育")'), $('h3:contains("学院")'), $('p').last(), $('ul').last())
-      $('#internship').append($('h2:contains("实习")'), $('h3:contains("公司")'), $('#paper > p'), $('#paper > ul').last())
+      $('#internship').append($('h2:contains("工作")'), $('h3:contains("公司")'), $('#paper > p'), $('#paper > ul').first())
       $('#works').append($('h2:contains("项目")'), $('#paper').children().not($('div')))
+      $('a[href="./images/qrcode.png"]').addClass('qrcode-trigger').append($('img.qrcode'))
     }).then(() => {
       $('#paper')[0].scrollTop = 0
       writeCode(code_beautify_resume, code_ready + code_marked).then(() => {
-        $('#information').append('<img src="./images/avatar.png" alt="头像" />')
+        $('#information').append($('img.avatar'))
       }).then(() => {
         writeCode(code_photo, code_ready + code_marked + code_beautify_resume).then(() => {
           $('#paper').addClass('breathe')
           $('#code_body').removeClass('breathe')
           setTimeout(() => {
             $('#options').css({ 'width': '23%' })
-            $('#options').append('<a class="downloadResume" href="resume.pdf" target="_blank" download="前端开发-蔡嘉琳">下载 PDF 简历</a>')
+            $('a.downloadResume').addClass('show')
+            $('#options').append($('a.downloadResume'))
           }, 1000)
         })
       })
@@ -267,11 +271,38 @@ writeCode(code_ready, '').then(() => {
   })
 })
 
+var speedCode = 1, duration = 80
+$('#speed_btn').click(() => {
+  speedCode += 1
+  if (speedCode > 3) {
+    speedCode = 1
+  }
+  switch (speedCode) {
+    case 1:
+      speed_status.innerText = '🚲'
+      description.innerText = '开小车车快点吧~'
+      duration = 70
+      break
+    case 2:
+      speed_status.innerText = '🚗'
+      description.innerText = '太废话了，我要最快！'
+      duration = 30
+      break
+    case 3:
+      speed_status.innerText = '🚀'
+      description.innerText = '我眼花了！慢一点~'
+      duration = 0
+      break
+    default:
+      return 0
+  }
+})
 
 function writeCode(code, origin) {
   let n = 1
   return new Promise(resolve => {
-    let intervalID = setInterval(() => {
+    let intervalID = setTimeout(write, duration)
+    function write() {
       code_body.innerHTML = Prism.highlight(origin + code.substr(0, n), Prism.languages.css, 'css');
       code_style.innerHTML = origin + code.substr(0, n)
       code_body.scrollTop = code_body.scrollHeight
@@ -279,21 +310,26 @@ function writeCode(code, origin) {
       if (n === code.length) {
         window.clearInterval(intervalID)
         resolve.call(undefined)
+      } else {
+        setTimeout(write, duration)
       }
-    }, 0)
+    }
   })
 }
 function writeResume() {
   let n = 1
   return new Promise(resolve => {
-    let intervalID = setInterval(() => {
+    let intervalID = setTimeout(write, duration)
+    function write () {
       paper.innerHTML = resume.substr(0, n)
       paper.scrollTop = paper.scrollHeight
       n++
       if (n === resume.length) {
         window.clearInterval(intervalID)
         resolve.call(undefined)
+      } else {
+        setTimeout(write, duration)
       }
-    }, 1)
+    }
   })
 }

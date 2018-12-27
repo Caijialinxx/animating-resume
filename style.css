@@ -16,12 +16,65 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;  
+  position: relative;
 }
 #options #code_body {
   height: 100%;
 }
+#options #speed_btn {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  transition: all 0.2s;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#options #speed_status {
+  transition: all 0.2s;
+  font-size: 24px;
+  margin-left: 10px;
+}
+#options #description {
+  opacity: 0;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+#options #speed_btn:hover #speed_status {
+  transform: scale(1.5);
+}
+#options #speed_btn:hover #description {
+  opacity: 1;
+}
+.qrcode-trigger {
+  position: relative;
+}
+.qrcode {
+  position: absolute;
+  z-index: 2;
+  bottom: 105%;
+  left: -50%;
+  width: 180px;
+  height: 180px;
+  transform: scale(0);
+  opacity: 0;
+  border: 6px solid #fafafa;
+  box-shadow: 0 0 4px 0 #ddd;
+  background: #fafafa;
+  border-radius: 4px;
+  transition: transform 10ms, opacity 0.3s ease-in-out;
+}
+.qrcode-trigger:hover .qrcode {
+  opacity: 1;
+  transform: scale(1);
+}
+.avatar {
+  width: 0;
+}
 .downloadResume {
-  display: inline-block;
+  display: none;
+  opacity: 0;
   font-size: 14px;
   font-weight: bold;
   color: #CFD8DC;
@@ -30,10 +83,14 @@
   margin-top: 14px;
   border-radius: 5px;
   border: 1px solid #CFD8DC;
-  transition: all 0.2s;
+  transition: all 0.2s, display 10ms;
 }
 .downloadResume:hover {
   box-shadow: 0 1px 6px 1px #cfdbdcbb;
+}
+.downloadResume.show {
+  display: inline-block;
+  opacity: 1;
 }
 
 .token.comment, .token.punctuation, .token.property, .token.selector {

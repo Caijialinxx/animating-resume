@@ -71,6 +71,9 @@
 #information {
   overflow: hidden;
 }
+.qrcode {
+  display: none;
+}
 
 #paper code {
   padding: 2px 4px;
