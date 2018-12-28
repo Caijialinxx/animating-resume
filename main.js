@@ -38,11 +38,11 @@ Github: https://github.com/Caijialinxx
 - 描述：该项目实现了一个 Markdown 简历的制作过程，在原生 JS 中使用 Promise 处理异步操作，利用 CSS3 实现过渡、动画、阴影和弹性布局等。
 - [源码链接](https://github.com/Caijialinxx/animating-resume/blob/master/main.js) | [预览链接](https://caijialinxx.github.io/animating-resume/)
 
-### 极简清单
+### 勾勾TODO
 - 关键词：\`React\`、\`小程序\`、\`组件化思想\`、\`3D 转换\`、\`动画\`、\`渐变\`、\`内外阴影\`
 - 描述：该项目由个人独立开发，功能有用户登录/注册、待办的添加/删除/标记完成状态。其中 PC 端（React）还实现了移动待办、更换背景的功能，更换背景的按钮使用 3D 转换、动画、渐变和盒阴影等；小程序实现了用户信息更改、一键删除已完成/已过期等。
 - React 版本：[源码链接](https://github.com/Caijialinxx/todo-react) | [预览链接](https://caijialinxx.github.io/todo-react/build/)
-- 小程序版本：[源码链接](https://github.com/Caijialinxx/GoGoTodo) | 小程序搜索“GoGoTodo” 或扫描[二维码](./images/qrcode.png)预览
+- 小程序版本：[源码链接](https://github.com/Caijialinxx/GoGoTodo) | 小程序搜索“勾勾TODO” 或扫描[二维码](./images/qrcode.png)预览
 
 ### 炫主页
 - 关键词：\`jQuery\`、\`CSS3 过渡动画\`、\`组件化思想\`、\`MVC 思想\`、\`媒体查询\`
