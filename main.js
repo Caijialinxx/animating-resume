@@ -9,13 +9,13 @@ Github: https://github.com/Caijialinxx
     - 能够使用原生 JavaScript 独立制作精美网页
     - 掌握 HTML5 如 canvas 、 nav 等语义化标签及 WebStorage API 等
     - 掌握 CSS3 动画、过渡、弹性盒子布局、媒体查询等响应式设计常用技术
-- Vue
+- Vue / React
     - 有 Vue 开发 PC 端运营系统经验，掌握组件及组件间数据传递的使用、响应式原理、路由和 Vuex 的使用等
-- React & React Native
     - 有 React 的开发经历，理解 JSX 、组件、 props 、 state 及生命周期等
-    - 有 React Native 移动端开发的经历，掌握原生 UI 组件、 React Navigation 、动画等 API 的使用
 - 移动端开发
-    - 会使用 REM 、 vw / vh 、 媒体查询等技术制作适配手机设备的页面
+  - 小程序开发经验，已发布上线。熟悉 WXML 模版/事件、 JS 逻辑交互及常用 API 、常用组件的使用等，掌握 JSON 配置。
+  - 有 React Native 移动端开发的经历，掌握原生 UI 组件、 React Navigation 、动画等 API 的使用
+  - 会使用 REM 、 vw / vh 、 媒体查询等技术制作适配手机设备的页面
 - Node.js
     - 搭配 Express 和 Socket.IO 开发在线聊天室，并已将项目部署上线
 - Webpack
