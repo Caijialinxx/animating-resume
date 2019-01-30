@@ -51,14 +51,16 @@
 #skills li, #works li, #education li {
   margin-bottom: 4px;
 }
-#internship, #education {
+#jobs > .experience, #education {
+  margin-bottom: 6px;
   position: relative;
 }
-#internship p, #education p {
+#jobs p, #education p {
   position: absolute;
   right: 0px;
-  top: 40px;
 }
+#jobs p { top: 6px; }
+#education p { top: 40px; }
 #information {
   position: relative;
 }

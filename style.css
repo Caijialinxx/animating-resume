@@ -22,6 +22,7 @@
   height: 100%;
 }
 #options #speed_btn {
+  z-index: 3;
   position: absolute;
   right: 20px;
   top: 10px;
@@ -91,6 +92,39 @@
 .downloadResume.show {
   display: inline-block;
   opacity: 1;
+}
+
+.skipper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: all 0.2s;
+}
+.blinkingButton {
+  display: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+  color: #fff;
+  animation: blinking 5s alternate infinite ease-in-out;
+}
+@keyframes blinking {
+  from { background-color: #455A6426; box-shadow: 0 0 9px #35454d26; }
+  50% { background-color: #455a64; box-shadow: 0 0 18px #455a6426; }
+  to { background-color: #455A6426; box-shadow: 0 0 9px #35454d26; }
 }
 
 .token.comment, .token.punctuation, .token.property, .token.selector {

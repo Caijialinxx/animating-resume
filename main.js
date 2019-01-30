@@ -1,7 +1,8 @@
 let resume = `# 蔡嘉琳
 137xxxxxxxx | caijialinxx@foxmail.com | 深圳
-Profile：https://caijialinxx.github.io/resume/
+Profile: https://caijialinxx.github.io/resume/
 Github: https://github.com/Caijialinxx
+Blog: https://caijialinxx.github.io
 18届毕业生 | 前端开发工程师
 
 ## 专业技能
@@ -27,25 +28,32 @@ Github: https://github.com/Caijialinxx
 
 ## 工作经历
 ### 北京宸铭影视文化传媒有限公司
-2018/10 - 至今
+2018/10 - 2018/12
 - 职位：前端开发（自接外包）
 - 主要技术：\`Vue\`、\`Vue Router\`、\`Vuex\`
 - 工作内容：开发单页面 PC 端运营管理系统。主要重难点有组件的使用和切换、多个组件实例之间共享的状态的管理（Vuex）。 UI 组件自造轮子或使用 Element 。
 
+### 天津乐童年科技发展有限公司
+2017/9 - 2017/11
+- 职位：前端开发（实习）
+- 主要技术：\`jQuery\`、\`CSS3\`、\`响应式设计\`
+- 工作内容：配合公司需要，开发公司的官方网站。
+
+
 ## 项目经验
 ### 简历生成器
-- 关键词：\`JavaScript\`、\`CSS3\`、\`Promise\`、\`Markdown\`
+- 关键词：\`JavaScript\`、\`Promise\`、\`变速\`、\`过渡动画\`、\`盒阴影\`
 - 描述：该项目实现了一个 Markdown 简历的制作过程，在原生 JS 中使用 Promise 处理异步操作，利用 CSS3 实现过渡、动画、阴影和弹性布局等。
 - [源码链接](https://github.com/Caijialinxx/animating-resume/blob/master/main.js) | [预览链接](https://caijialinxx.github.io/animating-resume/)
 
 ### 勾勾TODO
-- 关键词：\`React\`、\`小程序\`、\`组件化思想\`、\`3D 转换\`、\`动画\`、\`渐变\`、\`内外阴影\`
-- 描述：该项目由个人独立开发，功能有用户登录/注册、待办的添加/删除/标记完成状态。其中 PC 端（React）还实现了移动待办、更换背景的功能，更换背景的按钮使用 3D 转换、动画、渐变和盒阴影等；小程序实现了用户信息更改、一键删除已完成/已过期等。
+- 关键词：\`小程序\`、\`React\`、\`组件化思想\`、\`3D 转换\`、\`动画\`、\`渐变\`、\`内外阴影\`
+- 描述：该项目由个人独立开发，功能有用户登录/注册、待办的添加/删除/标记完成状态。其中小程序实现了用户信息更改、一键删除已完成/已过期等； PC 端（React）还实现了移动待办、更换背景的功能，更换背景的按钮使用 3D 转换、动画、渐变和盒阴影等。
 - React 版本：[源码链接](https://github.com/Caijialinxx/todo-react) | [预览链接](https://caijialinxx.github.io/todo-react/build/)
 - 小程序版本：[源码链接](https://github.com/Caijialinxx/GoGoTodo) | 小程序搜索“勾勾TODO” 或扫描[二维码](https://caijialinxx.github.io/animating-resume/images/qrcode.png)预览
 
 ### 炫主页
-- 关键词：\`jQuery\`、\`CSS3 过渡动画\`、\`组件化思想\`、\`MVC 思想\`、\`媒体查询\`
+- 关键词：\`jQuery\`、\`CSS3 过渡动画\`、\`组件化思想\`、\`MVC 思想\`、\`媒体查询\`、\`Sticky\`
 - 描述：此项目是本人的一个信息介绍页，包含基础信息、技能、项目展示以及留言板功能。有大量精美的动画，例如滚动时的导航栏及模块的浮起、导航栏 hover 动画、响应式设计等。
 - [源码链接](https://github.com/Caijialinxx/resume) | [预览链接](https://caijialinxx.github.io/resume/)
 
@@ -196,14 +204,22 @@ let code_beautify_resume = `
 #skills li, #works li, #education li {
   margin-bottom: 4px;
 }
+#jobs > .experience {
+  margin-bottom: 6px;
+}
 
 /* 调整“实习经历”和“教育经历”中时间的位置 */
-#internship, #education {
+#jobs > .experience, #education {
   position: relative;
 }
-#internship p, #education p {
+#jobs p, #education p {
   position: absolute;
   right: 0px;
+}
+#jobs p {
+  top: 6px;
+}
+#education p {
   top: 40px;
 }
 
@@ -231,42 +247,17 @@ let code_photo = `
  * 好啦，我的头像出来啦~
  * 期待这张面孔出现在您的面试中
  * 
- *                     *^_^*
- *          —— 蔡嘉琳 2018/12
+ *   —— 蔡嘉琳 2019/01 *^_^*
  */
 `
 
+var resumeInputTimeoutID, codeInputTimeoutID
 writeCode(code_ready, '').then(() => {
-  $('#paper').addClass('breathe')
-  $('#code_body').removeClass('breathe')
-  writeResume().then(() => {
-    $('#code_body').addClass('breathe')
-    $('#paper').removeClass('breathe')
-    writeCode(code_marked, code_ready).then(() => {
-      console.log($('img.qrcode'))
-      $('#paper')[0].innerHTML = marked(resume)
-      $('#paper').prepend('<div id="information"></div>', '<div id="skills"></div>', '<div id="internship"></div>', '<div id="works"></div>', '<div id="education"></div>')
-      $('#information').append($('h1'), $('p').first())
-      $('#skills').append($('h2:contains("技能")'), $('ul').first())
-      $('#education').append($('h2:contains("教育")'), $('h3:contains("学院")'), $('p').last(), $('ul').last())
-      $('#internship').append($('h2:contains("工作")'), $('h3:contains("公司")'), $('#paper > p'), $('#paper > ul').first())
-      $('#works').append($('h2:contains("项目")'), $('#paper').children().not($('div')))
-      $('a[href="./images/qrcode.png"]').addClass('qrcode-trigger').append($('img.qrcode'))
-    }).then(() => {
-      $('#paper')[0].scrollTop = 0
-      writeCode(code_beautify_resume, code_ready + code_marked).then(() => {
-        $('#information').append($('img.avatar'))
-      }).then(() => {
-        writeCode(code_photo, code_ready + code_marked + code_beautify_resume).then(() => {
-          $('#paper').addClass('breathe')
-          $('#code_body').removeClass('breathe')
-          setTimeout(() => {
-            $('#options').css({ 'width': '23%' })
-            $('a.downloadResume').addClass('show')
-            $('#options').append($('a.downloadResume'))
-          }, 1000)
-        })
-      })
+  createResume().then(() => {
+    adjustResume().then(() => {
+      addAndAdjustAvatar().then(showDownloadButton)
+    }, () => {
+      showFinalResult()
     })
   })
 })
@@ -301,17 +292,18 @@ $('#speed_btn').click(() => {
 function writeCode(code, origin) {
   let n = 1
   return new Promise(resolve => {
-    let intervalID = setTimeout(write, duration)
+    codeInputTimeoutID = setTimeout(write, duration)
     function write() {
       code_body.innerHTML = Prism.highlight(origin + code.substr(0, n), Prism.languages.css, 'css');
       code_style.innerHTML = origin + code.substr(0, n)
       code_body.scrollTop = code_body.scrollHeight
       n++
       if (n === code.length) {
-        window.clearInterval(intervalID)
+        window.clearTimeout(codeInputTimeoutID)
         resolve.call(undefined)
       } else {
-        setTimeout(write, duration)
+        window.clearTimeout(codeInputTimeoutID)
+        codeInputTimeoutID = setTimeout(write, duration)
       }
     }
   })
@@ -319,17 +311,110 @@ function writeCode(code, origin) {
 function writeResume() {
   let n = 1
   return new Promise(resolve => {
-    let intervalID = setTimeout(write, duration)
+    resumeInputTimeoutID = setTimeout(write, duration)
     function write () {
       paper.innerHTML = resume.substr(0, n)
       paper.scrollTop = paper.scrollHeight
       n++
       if (n === resume.length) {
-        window.clearInterval(intervalID)
+        window.clearTimeout(resumeInputTimeoutID)
         resolve.call(undefined)
       } else {
-        setTimeout(write, duration)
+        window.clearTimeout(resumeInputTimeoutID)
+        resumeInputTimeoutID = setTimeout(write, duration)
       }
     }
   })
+}
+
+function createResume() {
+  return new Promise(resolve => {
+    $('#paper').addClass('breathe')
+    $('#code_body').removeClass('breathe')
+    writeResume().then(resolve)
+    setTimeout(() => {
+      $('#skip_inputResume').show()
+      $('#skip_inputResume').click(() => {
+        skipResumeInput().then(resolve)
+      })
+    }, 1000)
+  })
+}
+function adjustResume() {
+  return new Promise((resolve, reject) => {
+    $('#code_body').addClass('breathe')
+    $('#paper').removeClass('breathe')
+    writeCode(code_marked, code_ready).then(() => {
+      structureResume()
+      $('#paper')[0].scrollTop = 0
+      writeCode(code_beautify_resume, code_ready + code_marked).then(resolve)
+      setTimeout(() => {
+        $('#skip_all').show()
+        $('#skip_all').click(() => {
+          skipAll().then(reject)
+        })
+      }, 1000)
+    })
+  })
+}
+function structureResume() {
+  $('#paper')[0].innerHTML = marked(resume)
+  $('#paper').prepend('<div id="information"></div>', '<div id="skills"></div>', '<div id="jobs"></div>', '<div id="works"></div>', '<div id="education"></div>')
+  $('#information').append($('h1'), $('p').first())
+  $('#skills').append($('h2:contains("技能")'), $('ul').first())
+  $('#education').append($('h2:contains("教育")'), $('h3:contains("学院")'), $('p').last(), $('ul').last())
+  $('#jobs').append($('h2:contains("工作")'))
+  $('h3:contains("公司")').each((index, element) => {
+    $('<div class="experience"></div>').append($(element), $('#paper > p').first(), $('#paper > ul').first()).appendTo($('#jobs'))
+  })
+  $('#works').append($('h2:contains("项目")'), $('#paper').children().not($('div')))
+  $('a[href="./images/qrcode.png"]').addClass('qrcode-trigger').append($('img.qrcode'))
+}
+function addAndAdjustAvatar() {
+  return new Promise(resolve => {
+    $('#information').append($('img.avatar'))
+    writeCode(code_photo, code_ready + code_marked + code_beautify_resume).then(() => {
+      $('#paper').addClass('breathe')
+      $('#code_body').removeClass('breathe')
+      setTimeout(resolve, 1000)
+    })
+  })
+}
+function showDownloadButton() {
+  $('#options').css({ 'width': '23%' })
+  $('a.downloadResume').addClass('show')
+  $('#options').append($('a.downloadResume'))
+}
+
+function skipResumeInput() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      window.clearTimeout(resumeInputTimeoutID)
+      paper.innerHTML = resume
+      paper.scrollTop = paper.scrollHeight
+      resolve()
+      $('#skip_inputResume').remove()
+    }, 0)
+  })
+}
+function skipAll() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      window.clearTimeout(codeInputTimeoutID)
+      resolve()
+      $('.skipper').remove()
+    }, 0)
+  })
+}
+function showFinalResult() {
+  $('#paper').addClass('breathe')
+  $('#code_body').removeClass('breathe')
+  $('#information').append($('img.avatar'))
+  code_body.innerHTML = Prism.highlight(code_ready + code_marked + code_beautify_resume + code_photo, Prism.languages.css, 'css');
+  code_style.innerHTML = code_ready + code_marked + code_beautify_resume + code_photo
+  code_body.scrollTop = code_body.scrollHeight
+  window.clearTimeout(codeInputTimeoutID)
+  $('#options').css({ 'width': '23%' })
+  $('a.downloadResume').addClass('show')
+  $('#options').append($('a.downloadResume'))
 }
