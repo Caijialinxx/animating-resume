@@ -376,6 +376,7 @@ function addAndAdjustAvatar() {
     writeCode(code_photo, code_ready + code_marked + code_beautify_resume).then(() => {
       $('#paper').addClass('breathe')
       $('#code_body').removeClass('breathe')
+      $('.skipper').remove()
       setTimeout(resolve, 1000)
     })
   })
