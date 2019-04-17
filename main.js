@@ -8,25 +8,30 @@ Blog: https://caijialinxx.github.io
 ## 专业技能
 - HTML5, CSS3 & JavaScript
     - 能够使用原生 JavaScript 独立制作精美网页
-    - 掌握 HTML5 如 canvas 、 nav 等语义化标签及 WebStorage API 等
+    - 掌握 HTML5 如 canvas 、 audio 等语义化标签及 WebStorage API 等
     - 掌握 CSS3 动画、过渡、弹性盒子布局、媒体查询等响应式设计常用技术
 - Vue / React
-    - 有 Vue 开发 PC 端运营系统经验，掌握组件及组件间数据传递的使用、响应式原理、路由和 Vuex 的使用等
-    - 有 React 的开发经历，理解 JSX 、组件、 props 、 state 及生命周期等
+    - Vue 开发经验，掌握组件及组件间数据传递的使用、响应式原理、路由和 Vuex 的使用等
+    - React 开发经验，掌握 React Router 和 Ant Design UI库的使用，理解组件通信及生命周期等概念
 - 移动端开发
   - 小程序开发经验，已发布上线。熟悉 WXML 模版/事件、 JS 逻辑交互及常用 API 、常用组件的使用等，掌握 JSON 配置。
-  - 有 React Native 移动端开发的经历，掌握原生 UI 组件、 React Navigation 、动画等 API 的使用
+  - React Native 移动端开发的经历，掌握原生 UI 组件、 React Navigation 、动画等 API 的使用
   - 会使用 REM 、 vw / vh 、 媒体查询等技术制作适配手机设备的页面
-- Node.js
-    - 搭配 Express 和 Socket.IO 开发在线聊天室，并已将项目部署上线
-- Webpack
-    - 有使用 Webpack 打包项目的经验，了解其管理资源的方法，如 css-loader 、 file-loader 等
 - 其他
+    - 熟悉 Git 常用命令、代码仓库协同工作流程等
     - 熟悉 jQuery 常用 API ，如 DOM 操作、特效、事件等。曾使用原生 JavaScript 封装简易版的 $.ajax()
     - 掌握 Scss 、 Less 的使用，理解嵌套规则、父选择器 & 、变量、混合等的使用
     - 理解 MVC 、 MVVM 思想，掌握 HTTP 基础等
+    - 使用 Node.js 搭配 Express 和 Socket.IO 开发在线聊天室，并已将项目部署上线
+    - 使用 Webpack 打包项目的经验，了解其管理资源的方法，如 css-loader 、 file-loader 等
 
 ## 工作经历
+### 深圳芥菜种科技有限公司
+2019/2 - 2019/4
+- 职位：前端开发
+- 主要技术：\`React\`、\`React Router\`、\`Mobx\`
+- 工作内容：开发智能英语学习平台。老师端中负责 1.1 版本的所有更新和优化；学生端中负责休息浮窗组件、弹窗对话框组件及学生信息页等的开发。 UI 组件自造轮子或使用 Ant Design 。
+
 ### 北京宸铭影视文化传媒有限公司
 2018/10 - 2018/12
 - 职位：前端开发（自接外包）
@@ -38,7 +43,6 @@ Blog: https://caijialinxx.github.io
 - 职位：前端开发（实习）
 - 主要技术：\`jQuery\`、\`CSS3\`、\`响应式设计\`
 - 工作内容：配合公司需要，开发公司的官方网站。
-
 
 ## 项目经验
 ### 简历生成器
