@@ -1,80 +1,70 @@
 let resume = `# 蔡嘉琳
 137xxxxxxxx | caijialinxx@foxmail.com | 深圳
-Profile: https://caijialinxx.github.io/resume/
 Github: https://github.com/Caijialinxx
 Blog: https://caijialinxx.github.io
-18届毕业生 | 前端开发工程师
+前端开发
 
 ## 专业技能
-- HTML5, CSS3 & JavaScript
-    - 能够使用原生 JavaScript 独立制作精美网页
-    - 掌握 HTML5 如 canvas 、 audio 等语义化标签及 WebStorage API 等
-    - 掌握 CSS3 动画、过渡、弹性盒子布局、媒体查询等响应式设计常用技术
-- Vue / React
-    - Vue 开发经验，掌握组件及组件间数据传递的使用、响应式原理、路由和 Vuex 的使用等
-    - React 开发经验，掌握 React Router 和 Ant Design UI库的使用，理解组件通信及生命周期等概念
-- 移动端开发
-  - 小程序开发经验，已发布上线。熟悉 WXML 模版/事件、 JS 逻辑交互及常用 API 、常用组件的使用等，掌握 JSON 配置。
-  - React Native 移动端开发的经历，掌握原生 UI 组件、 React Navigation 、动画等 API 的使用
-  - 会使用 REM 、 vw / vh 、 媒体查询等技术制作适配手机设备的页面
-- 其他
-    - 熟悉 Git 常用命令、代码仓库协同工作流程等
-    - 熟悉 jQuery 常用 API ，如 DOM 操作、特效、事件等。曾使用原生 JavaScript 封装简易版的 $.ajax()
-    - 掌握 Scss 、 Less 的使用，理解嵌套规则、父选择器 & 、变量、混合等的使用
-    - 理解 MVC 、 MVVM 思想，掌握 HTTP 基础等
-    - 使用 Node.js 搭配 Express 和 Socket.IO 开发在线聊天室，并已将项目部署上线
-    - 使用 Webpack 打包项目的经验，了解其管理资源的方法，如 css-loader 、 file-loader 等
+- 掌握 HTML5 及 CSS3 ，熟悉传统布局、 Flex 布局、移动端适配等，有较好的审美及保证设计稿还原度。使用 Scss / Less 开发 CSS 
+- 掌握 JavaScript ，掌握原型、原型链、闭包、面向对象等。了解 ES6 部分新特性
+- 掌握 React 及其相关库的使用，理解生命周期、组件通信、异步更新、 Hooks 、虚拟 DOM 、 Diff 算法等
+- 使用 TypeScript 开发，理解接口、常用类型、可选链、空值合并运算符等
+- Vue 结合相关库的开发经验，掌握组件及组件间数据传递的使用、响应式原理、路由等
+- Git 的使用，代码仓库协同工作的能力、 npm 发布等经验
+- React Native 、小程序等移动端开发经验
+- 理解 MVC 、 MVVM 思想，了解 HTTP 基础
+- 使用 webpack 打包项目的经验，了解其资源管理的方法，如 css-loader 、 file-loader 等
+- 熟悉 jQuery 常用 API ，如 DOM 操作、特效、事件等。曾使用原生 JavaScript 封装简易版的 $.ajax()
+
+## 项目经验
+### CUI
+[Try it](https://caijialinxx.github.io/ui-demo/) | [View source](https://github.com/Caijialinxx/ui-demo)
+- 关键词：\`UI 组件库\`、\`React Hooks\`、\`TypeScript\`、\`npm\`、\`webpack\`、\`CircleCi\`
+- 描述：个人独立开发的 React UI 组件库，使用 React Hooks + TypeScript 开发，并已发布到 npm 中。由此掌握了 webpack 打包、 npm 发布流程、 CircleCi 自动化持续集成等。其中遇到的一个问题记录在了博客中——[从 npm 引入 React Hooks 轮子库报错 Minified React error#321 的解决方法](https://caijialinxx.github.io/2019/11/20/fix-react-error-321-by-webpack-externals/)。
+
+### 简历生成器
+[Try it](https://caijialinxx.github.io/animating-resume/) | [View source](https://github.com/Caijialinxx/animating-resume)
+- 关键词：\`JavaScript\`、\`Promise\`、\`变速\`、\`过渡动画\`、\`盒阴影\`
+- 描述：该项目实现将一个 Markdown 简历转成可下载的 PDF 简历。使用原生 JS 开发， Promise 处理异步链式操作（各个步骤的跳转衔接），利用 CSS3 实现过渡、动画、阴影和弹性布局等。
+
+### 炫主页
+[Try it](https://caijialinxx.github.io/resume/) | [View source](https://github.com/Caijialinxx/resume)
+- 关键词：\`jQuery\`、\`CSS3 过渡动画\`、\`组件化思想\`、\`MVC 思想\`、\`媒体查询\`、\`Sticky\`
+- 描述：此项目是本人的一个信息介绍页，包含基础信息、技能、项目展示以及留言板功能。有大量精美的动画，例如滚动时的导航栏及模块的浮起、导航栏 hover 动画、响应式设计等。
+
+### 幻灯片放映室
+[Try it](https://caijialinxx.github.io/Slides/) | [View source](https://github.com/Caijialinxx/Slides)
+- 关键词：\`jQuery\`、\`Loop模式\`、\`缩略图模式\`、\`Rem\`、\`适配移动端\`、\`ES6\`
+- 描述：本项目展示了两种不同风格的轮播，功能有上一张、下一张、可点击的原点/缩略图导航、自动循环播放。使用了 Rem 单位，以及适配移动端。
+
+### 涂鸦板
+[Try it](https://caijialinxx.github.io/Canvas/) | [View source](https://github.com/Caijialinxx/Canvas)
+- 关键词：\`HTML5\`、\`Canvas\`、\`ES6\`、\`JavaScript\`
+- 描述：使用 HTML5 的 Canvas 元素及其相关 API ，实现支持多指同时画图（可选色/粗细）、橡皮擦、一键清空、保存至本地的功能。
+
+### 壹号聊天室
+[Try it](https://arcane-mountain-17783.herokuapp.com/) | [View source](https://github.com/Caijialinxx/IMsystem)
+- 关键词：\`Node.js\`、\`Socket.IO\`、\`Express\`
+- 描述：该项目后端使用 Node.js 实现一个在线聊天室，有登录、添加好友、单聊/群聊、发送消息（文本/表情/文件）等功能。使用 Express 实现路由功能，由个人独立开发，已部署到 Heroku 上。
 
 ## 工作经历
 ### 深圳芥菜种科技有限公司
-2019/2 - 2019/4
+2019/2 - 2019/5
 - 职位：前端开发
 - 主要技术：\`React\`、\`React Router\`、\`Mobx\`
-- 工作内容：开发智能英语学习平台。老师端中负责 1.1 版本的所有更新和优化；学生端中负责休息浮窗组件、弹窗对话框组件及学生信息页等的开发。 UI 组件自造轮子或使用 Ant Design 。
+- 工作内容：开发智能英语学习平台。负责中后台 1.1 版本的所有更新和优化；To C 系统中负责 UI 组件的开发供前端调用，以及数学学习模块的更新维护。
 
 ### 北京宸铭影视文化传媒有限公司
 2018/10 - 2018/12
 - 职位：前端开发（自接外包）
 - 主要技术：\`Vue\`、\`Vue Router\`、\`Vuex\`
-- 工作内容：开发单页面 PC 端运营管理系统。主要重难点有组件的使用和切换、多个组件实例之间共享的状态的管理（Vuex）。 UI 组件自造轮子或使用 Element 。
+- 工作内容：开发单页面 PC 端中后台运营管理系统。主要重难点有组件的使用和切换、多个组件实例之间共享的状态的管理（Vuex）。 UI 组件自造轮子或使用 Element 。
 
 ### 天津乐童年科技发展有限公司
 2017/9 - 2017/11
 - 职位：前端开发（实习）
 - 主要技术：\`jQuery\`、\`CSS3\`、\`响应式设计\`
 - 工作内容：配合公司需要，开发公司的官方网站。
-
-## 项目经验
-### 简历生成器
-- 关键词：\`JavaScript\`、\`Promise\`、\`变速\`、\`过渡动画\`、\`盒阴影\`
-- 描述：该项目实现了一个 Markdown 简历的制作过程，在原生 JS 中使用 Promise 处理异步操作，利用 CSS3 实现过渡、动画、阴影和弹性布局等。
-- [源码链接](https://github.com/Caijialinxx/animating-resume/blob/master/main.js) | [预览链接](https://caijialinxx.github.io/animating-resume/)
-
-### 勾勾TODO
-- 关键词：\`小程序\`、\`React\`、\`组件化思想\`、\`3D 转换\`、\`动画\`、\`渐变\`、\`内外阴影\`
-- 描述：该项目由个人独立开发，功能有用户登录/注册、待办的添加/删除/标记完成状态。其中小程序实现了用户信息更改、一键删除已完成/已过期等； PC 端（React）还实现了移动待办、更换背景的功能，更换背景的按钮使用 3D 转换、动画、渐变和盒阴影等。
-- React 版本：[源码链接](https://github.com/Caijialinxx/todo-react) | [预览链接](https://caijialinxx.github.io/todo-react/build/)
-- 小程序版本：[源码链接](https://github.com/Caijialinxx/GoGoTodo) | 小程序搜索“勾勾TODO” 或扫描[二维码](https://caijialinxx.github.io/animating-resume/images/qrcode.png)预览
-
-### 炫主页
-- 关键词：\`jQuery\`、\`CSS3 过渡动画\`、\`组件化思想\`、\`MVC 思想\`、\`媒体查询\`、\`Sticky\`
-- 描述：此项目是本人的一个信息介绍页，包含基础信息、技能、项目展示以及留言板功能。有大量精美的动画，例如滚动时的导航栏及模块的浮起、导航栏 hover 动画、响应式设计等。
-- [源码链接](https://github.com/Caijialinxx/resume) | [预览链接](https://caijialinxx.github.io/resume/)
-
-### 幻灯片放映室
-- 关键词：\`jQuery\`、\`Loop模式\`、\`缩略图模式\`、\`Rem\`、\`适配移动端\`、\`ES6\`
-- 描述：本项目展示了两种不同风格的轮播，功能有上一张、下一张、可点击的原点/缩略图导航、自动循环播放。使用了 Rem 单位，以及适配移动端。
-- [源码链接](https://github.com/Caijialinxx/Slides/blob/master/main.js) | [预览链接](https://caijialinxx.github.io/Slides/)
-
-### 彩色涂鸦
-- 关键词：\`HTML5\`、\`Canvas\`、\`ES6\`、\`JavaScript\`
-- 描述：使用 HTML5 的 Canvas 元素及其相关 API ，实现支持多指同时画图（可选色/粗细）、橡皮擦、一键清空、保存至本地的功能。
-- [源码链接](https://github.com/Caijialinxx/Canvas/blob/master/main.js) | [预览链接](https://caijialinxx.github.io/Canvas/)
-
-### 壹号聊天室
-- 关键词：\`Node.js\`、\`Socket.IO\`、\`Express\`
-- 描述：该项目后端使用 Node.js 实现一个在线聊天室，有登录、添加好友、单聊/群聊、发送消息（文本/表情/文件）等功能。使用 Express 实现路由功能，由个人独立开发，已部署到 Heroku 上。
-- [源码链接](https://github.com/Caijialinxx/IMsystem) | [预览链接](https://arcane-mountain-17783.herokuapp.com/)
 
 ## 教育经历
 ### 广东第二师范学院
@@ -208,23 +198,18 @@ let code_beautify_resume = `
 #skills li, #works li, #education li {
   margin-bottom: 4px;
 }
-#jobs > .experience {
+#jobs > .single {
   margin-bottom: 6px;
 }
 
 /* 调整“实习经历”和“教育经历”中时间的位置 */
-#jobs > .experience, #education {
+#jobs > .single, #education > .single, #works > .single {
   position: relative;
 }
-#jobs p, #education p {
+#jobs p, #education p, #works p {
   position: absolute;
   right: 0px;
-}
-#jobs p {
   top: 6px;
-}
-#education p {
-  top: 40px;
 }
 
 
@@ -258,6 +243,7 @@ let code_photo = `
 var resumeInputTimeoutID, codeInputTimeoutID
 writeCode(code_ready, '').then(() => {
   createResume().then(() => {
+    $('#skip_inputResume').remove()
     adjustResume().then(() => {
       addAndAdjustAvatar().then(showDownloadButton)
     }, () => {
@@ -363,16 +349,37 @@ function adjustResume() {
 }
 function structureResume() {
   $('#paper')[0].innerHTML = marked(resume)
-  $('#paper').prepend('<div id="information"></div>', '<div id="skills"></div>', '<div id="jobs"></div>', '<div id="works"></div>', '<div id="education"></div>')
+  $('#paper').prepend('<div id="information"></div>', '<div id="skills"></div>', '<div id="works"></div>', '<div id="jobs"></div>', '<div id="education"></div>')
+  
+  // 「基本信息」
   $('#information').append($('h1'), $('p').first())
-  $('#skills').append($('h2:contains("技能")'), $('ul').first())
-  $('#education').append($('h2:contains("教育")'), $('h3:contains("学院")'), $('p').last(), $('ul').last())
+
+  // 「专业技能」
+  const skills_header = $('h2:contains("技能")')
+  $('#skills').append(skills_header, skills_header.next('ul')[0])
+
+  // 「教育经历」
+  $('#education').append($('h2:contains("教育")'), $('<div class="single"></div>').append($('h3:contains("学院")'), $('p').last(), $('ul').last()))
+
+  // 「工作经历」
   $('#jobs').append($('h2:contains("工作")'))
   $('h3:contains("公司")').each((index, element) => {
-    $('<div class="experience"></div>').append($(element), $('#paper > p').first(), $('#paper > ul').first()).appendTo($('#jobs'))
+    $('<div class="single"></div>')
+      .append($(element), $(element).next('p')[0], $(element).next('p').next('ul')[0])
+      .appendTo('#jobs')
   })
-  $('#works').append($('h2:contains("项目")'), $('#paper').children().not($('div')))
-  $('a[href="./images/qrcode.png"]').addClass('qrcode-trigger').append($('img.qrcode'))
+
+  // 「项目经验」模块
+  $('#works').append($('h2:contains("项目")'))
+  const project_title_array = $('#paper > h3')    // 剩余的h3就是项目名
+  project_title_array.each((index, element) => {
+    $('<div class="single"></div>')
+      .append($(element), $(element).next('p')[0], $(element).next('p').next('ul')[0])
+      .appendTo('#works')
+  })
+
+  // 「小程序」
+  // $('a[href="./images/qrcode.png"]').addClass('qrcode-trigger').append($('img.qrcode'))
 }
 function addAndAdjustAvatar() {
   return new Promise(resolve => {
