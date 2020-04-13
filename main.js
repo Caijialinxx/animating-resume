@@ -11,7 +11,7 @@ Blog: https://caijialinxx.github.io
 - 使用 TypeScript 开发，理解接口、常用类型、可选链、空值合并运算符等
 - Vue 结合相关库的开发经验，掌握组件及组件间数据传递的使用、响应式原理、路由等
 - Git 的使用，代码仓库协同工作的能力、 npm 发布等经验
-- React Native 、小程序等移动端开发经验
+- React Native 、原生小程序等移动端开发经验
 - 理解 MVC 、 MVVM 思想，了解 HTTP 基础
 - 使用 webpack 打包项目的经验，了解其资源管理的方法，如 css-loader 、 file-loader 等
 - 熟悉 jQuery 常用 API ，如 DOM 操作、特效、事件等。曾使用原生 JavaScript 封装简易版的 $.ajax()
@@ -42,29 +42,18 @@ Blog: https://caijialinxx.github.io
 - 关键词：\`HTML5\`、\`Canvas\`、\`ES6\`、\`JavaScript\`
 - 描述：使用 HTML5 的 Canvas 元素及其相关 API ，实现支持多指同时画图（可选色/粗细）、橡皮擦、一键清空、保存至本地的功能。
 
-### 壹号聊天室
-[Try it](https://arcane-mountain-17783.herokuapp.com/) | [View source](https://github.com/Caijialinxx/IMsystem)
-- 关键词：\`Node.js\`、\`Socket.IO\`、\`Express\`
-- 描述：该项目后端使用 Node.js 实现一个在线聊天室，有登录、添加好友、单聊/群聊、发送消息（文本/表情/文件）等功能。使用 Express 实现路由功能，由个人独立开发，已部署到 Heroku 上。
-
 ## 工作经历
-### 深圳芥菜种科技有限公司
+### 深圳市亿兆互联技术有限公司
+2020/3 - 至今
+- 职位：Web前端开发
+- 主要技术：\`Vue\`、\`Vue Router\`、\`Vuex\`
+- 工作内容：开发和维护智能照明控制系统，独立承担太阳能智能灯控系统中高德地图模块的开发。快速定位和解决 Bug ，针对可优化的地方主动提供优化方案并执行。
+
+### 深圳市芥菜种科技有限公司
 2019/2 - 2019/5
-- 职位：前端开发
+- 职位：Web前端开发
 - 主要技术：\`React\`、\`React Router\`、\`Mobx\`
 - 工作内容：开发智能英语学习平台。负责中后台 1.1 版本的所有更新和优化；To C 系统中负责 UI 组件的开发供前端调用，以及数学学习模块的更新维护。
-
-### 北京宸铭影视文化传媒有限公司
-2018/10 - 2018/12
-- 职位：前端开发（自接外包）
-- 主要技术：\`Vue\`、\`Vue Router\`、\`Vuex\`
-- 工作内容：开发单页面 PC 端中后台运营管理系统。主要重难点有组件的使用和切换、多个组件实例之间共享的状态的管理（Vuex）。 UI 组件自造轮子或使用 Element 。
-
-### 天津乐童年科技发展有限公司
-2017/9 - 2017/11
-- 职位：前端开发（实习）
-- 主要技术：\`jQuery\`、\`CSS3\`、\`响应式设计\`
-- 工作内容：配合公司需要，开发公司的官方网站。
 
 ## 教育经历
 ### 广东第二师范学院
@@ -72,7 +61,6 @@ Blog: https://caijialinxx.github.io
 - 专业学历：计算机科学与技术 大学本科
 - GPA：3.4 / 4.0
 - 荣誉：校二、三奖学金、优秀学生（2014-2015、2016-2017共两学年）、优秀学生干部（2014-2015、2016-2017共两学年）
-- 相关课程：网络应用开发（PHP）、数据结构与算法、数据库系统原理、计算机网络等
 `
 
 let code_ready = `/*
@@ -222,10 +210,10 @@ let code_photo = `
   position: relative;
 }
 #information .avatar {
-  width: 90px;
+  width: 100px;
   position: absolute;
   right: 0px;
-  top: -10px;
+  top: 0px;
 }
 /* 让多余的照片隐藏吧~ */
 #information {

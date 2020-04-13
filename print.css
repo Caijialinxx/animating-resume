@@ -34,6 +34,12 @@
   line-height: 24px;
   white-space: pre-wrap;
 }
+#information img.avatar {
+  width: 100px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
 #paper h2 {
   font-size: 16px;
   border-bottom: 1px solid #455A64;
