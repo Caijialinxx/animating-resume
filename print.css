@@ -17,8 +17,12 @@
 #paper a {
   color: #455A64;
 }
-#paper ul {
+#paper ul, #paper ol {
   padding-left: 20px;
+}
+#paper em {
+  color: peru;
+  font-style: normal;
 }
 #paper > div {
   margin-bottom: 28px;
