@@ -25,7 +25,7 @@
   font-style: normal;
 }
 #paper > div {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 #paper h1 {
   font-size: 22px;
@@ -53,7 +53,7 @@
 #paper h3 {
   display: inline-block;
   font-size: 14px;
-  margin: 6px 0;
+  margin: 4px 0;
 }
 #skills > ul ul {
   margin: 4px 0;
@@ -68,7 +68,7 @@
 #jobs p, #education p, #works p {
   position: absolute;
   right: 0px;
-  top: 6px;
+  top: 4px;
 }
 #information {
   position: relative;
