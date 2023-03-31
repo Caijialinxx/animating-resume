@@ -1,5 +1,5 @@
 let resume = `# 蔡嘉琳
-13717096136 | caijialinxx@foxmail.com | 北京
+137xxxxxxxx | caijialinxx@foxmail.com | 北京/深圳/远程
 Github: https://github.com/Caijialinxx
 Blog: https://caijialinxx.github.io
 4年前端开发
