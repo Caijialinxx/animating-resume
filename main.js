@@ -46,7 +46,7 @@ Blog: https://caijialinxx.github.io
     4. 负责定位、评估遗留 Bug 并提供修复方案（已修复 51 个），主导前端安全加固，如接口入参加密、签名、页面权限控制等，使平台安全、稳定运营——⽀持⽤户快速开发和迭代报表，相⽐定制化开发模式，每张报表从开发到上线时间缩短了 55% ~ 78% ，提效 122% ~ 344% ，节省约 76% ⼈⼒；报表管理的⽉活⽤户约 1300 ⼈，活跃率约 15% ，共制作报表 1800+ 张，⽉均访问 20000+ 次，⽉均下载 6000+ 次；邮件订阅中活跃任务 126 份，占任务总数 58% ，共服务单⽤户 1661 ⼈、邮件组 35 个。
 
 ### CUI
-[预览](https://caijialinxx.github.io/ui-demo/#icon)
+[预览](https://caijialinxx.github.io/ui-demo/)
 - 关键词：\`UI 组件库\`、\`React Hooks\`、\`TypeScript\`、\`npm\`、\`webpack\`、\`CircleCi\`
 - 描述：个人独立开发的 React UI 组件库，使用 React Hooks + TypeScript 开发，并已发布到 npm 中。由此掌握了 webpack 打包、 npm 发布流程、 CircleCi 自动化持续集成等。其中遇到的一个问题记录在了博客中——[从 npm 引入 React Hooks 轮子库报错 Minified React error#321 的解决方法](https://caijialinxx.github.io/2019/11/20/fix-react-error-321-by-webpack-externals/)。
 
